@@ -1,0 +1,273 @@
+$main_c: #323546
+$secondary_c: #242633
+$third_c: #2c2f3e
+$highlight_c: #f63800
+
+body, html
+   font-family: montserrat, arial, sans-serif
+   background: $main_c
+   color: white
+   font-size: 1.25em
+   font-weight: 300
+   height: 100%
+   width: 100%
+   margin: 0
+
+div
+   -moz-box-sizing: border-box
+   -webkit-box-sizing: border-box
+   box-sizing: border-box
+
+p
+   margin: 0
+   width: 100%
+
+table
+   min-width: 250px
+
+tr
+   background-color: $secondary_c
+
+   &:nth-child(even)
+      background-color: $third_c
+
+td
+   padding: 3% 6%
+   font-size: 0.8em
+
+   &:nth-child(1)
+      border-radius: 10px 0 0 10px
+
+   &:nth-child(2)
+      border-radius: 0 10px 10px 0
+
+ul
+   margin: 0.5% 0
+
+li
+   margin: 0.2% 0
+
+h1, h2, h3
+   font-weight: 100
+   line-height: 0.9
+   margin: 0
+
+h1
+   font-size: 4em
+   margin-bottom: 4%
+
+h2
+   font-size: 1.5em
+   text-align: center
+   margin-bottom: 0.5em
+
+h3
+   font-size: 1em
+
+a
+   color: white
+   text-decoration: none
+
+   &:visited
+      color: white
+      text-decoration: none
+
+   &:hover
+      color: grey
+
+textarea
+   font-family: inherit
+   font-size: 0.9em
+   padding: 1.5% 2%
+   display: inline-block
+   border: 1px solid #ccc
+   border-radius: 6px
+   resize: none
+   width: 80%
+   margin-bottom: 1%
+
+input
+   font-family: inherit
+   font-size: 0.9em
+   padding: 1% 2%
+   display: inline-block
+   border: 1px solid #ccc
+   border-radius: 6px
+   margin-bottom: 1%
+   width: 30%
+
+input[type=submit]
+   background-color: $secondary_c
+   color: white
+   padding: 1% 12%
+   border: none
+   border-radius: 10px
+   cursor: pointer
+   width: auto
+
+input[type=submit]:hover
+   background-color: #1a1a1a
+
+#password_input
+   border-radius: 10px
+
+button
+   background: none
+   color: inherit
+   border: none
+   padding: 0
+   font: inherit
+   cursor: pointer
+   outline: inherit
+
+#container
+   height: 100%
+   width: 100%
+
+#nav
+   background-color: $secondary_c
+   width: 100%
+   height: 7%
+   display: flex
+   justify-content: space-between
+   align-items: center
+
+   a
+      font-size: 1.1em
+      padding: 0 3%
+      font-weight: normal
+
+      &:hover
+         color: inherit
+         text-decoration: underline
+         text-decoration-color: $highlight_c
+
+   div
+      width: 30%
+      height: 100%
+      display: flex
+      align-items: center
+      white-space: nowrap
+      padding: 0 2%
+      color: $highlight_c
+
+      p
+         padding: 0 2%
+         font-size: 1.7em
+         color: white
+         display: inline-block
+         width: fit-content
+
+#nav_links
+   justify-content: center
+
+#switch_modes_div
+   justify-content: flex-end
+
+   img
+      height: 1.7em
+
+#content_container
+   width: 100%
+   height: 93%
+   display: flex
+   padding: 1.5%
+
+.content
+   height: 100%
+   padding: 1.5%
+   text-align: justify
+
+   img
+      height: 100%
+      border-radius: 30px
+
+.blog_content
+   width: 100%
+   padding: 0 15%
+   text-align: center
+
+.post
+   background: white
+   border: black
+   border-radius: 25px
+   padding: 2.5%
+   padding-bottom: 1%
+   color: black
+   text-align: left
+   margin-bottom: 2%
+
+   h3
+      font-size: 1.1em
+      font-weight: 300
+      padding-bottom: 1%
+
+   p
+      box-sizing: border-box
+      border-top: 1px solid black
+      border-bottom: 1px solid black
+      font-size: 0.8em
+      padding: 1%
+
+   .timestamp
+      text-align: right
+      font-size: 0.7em
+      padding-top: 0.5%
+
+#blog_options_div
+   overflow: hidden
+   padding: 0 25px
+
+   input
+      float: right
+      font-size: 0.7em
+      padding: 3px
+      width: 25%
+      color: gray
+
+   input[type=submit]
+      width: 6%
+      padding: 4px
+      color: white
+      margin-left: 1%
+
+   p
+      width: 20%
+      text-align: left
+      font-size: 0.8em
+      color: gray
+      float: left
+
+      a
+         color: inherit
+
+         &:hover
+            color: darkgrey
+
+#top-content-right
+   max-width: 1200px
+
+.flex_container
+   display: flex
+
+.highlight
+   color: $highlight_c
+
+@media screen and ( max-width: 1500px )
+   h1
+      font-size: 3em
+
+   p
+      font-size: 0.9em
+
+   table
+      font-size: 0.9
+      min-width: 250px
+
+   td
+      padding: 2% 6%
+      font-size: 0.7em
+
+   .content
+      img
+         height: 80%

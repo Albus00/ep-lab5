@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2560" height="2560" viewBox="0 0 2560 2560">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #323546;
+      }
+
+      .cls-2 {
+        fill: #d91604;
+      }
+    </style>
+  </defs>
+  <g id="Artboard_1" data-name="Artboard 1">
+    <rect id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" class="cls-1" width="2560" height="2560" rx="400" ry="400"/>
+    <ellipse class="cls-2" cx="1280" cy="1279.795" rx="1150" ry="1163.795"/>
+    <circle class="cls-1" cx="1140" cy="1140" r="750"/>
+  </g>
+</svg>
