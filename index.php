@@ -15,7 +15,7 @@
       echo "<table>";
 
       // WHERE setId LIKE '10199-1'
-      $set	=	mysqli_query($link, "SELECT * FROM sets WHERE setID LIKE " . $setId);
+      $set	=	mysqli_query($link, "SELECT * FROM sets WHERE setID LIKE '" . $setId . "'");
       while	($row	=	mysqli_fetch_array($set))	{
          $catId =	$row['CatID'];
          $name = $row['Setname'];
