@@ -27,7 +27,7 @@ function displaySet($link, $setID) {
                      . $year .
                   "</td>
                </tr>
-            </table>"
+            </table>";
       }
    } catch (\Throwable $th) {
       echo $set . "<br>" . $th->getMessage();
