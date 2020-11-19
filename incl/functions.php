@@ -13,6 +13,8 @@ function displaySet($link, $setId) {
 
 function displaySetInventory($link, $setId) {
    try {
+      $imagePathPrefix = "http://www.itn.liu.se/~stegu76/img.bricklink.com/";
+
       echo "<table>";
       echo "
          <tr>
@@ -37,7 +39,7 @@ function displaySetInventory($link, $setId) {
          echo "
             <tr>
                <td>" . $quantity . "</td>
-               <td>" . "image" . "</td>
+               <td><img src='" . $imagePathPrefix . $imagePath . "' alt='" . $partName . "'></td>
                <td>" . $colorName . "</td>
                <td>" . $partName . "</td>
             </tr>";
