@@ -27,10 +27,10 @@ tr:nth-child(even) {
 }
 
 td, th {
-  padding: 1% 2%;
+  padding: 1% 1%;
   font-size: 0.7em;
   font-weight: normal;
-  min-width: 130px;
+  min-width: 100px;
 }
 
 td:nth-child(1), th:nth-child(1) {
