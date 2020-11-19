@@ -5,7 +5,8 @@
    $set	=	mysqli_query($link,	"SELECT	*	FROM	inventory");																																	
 	while	($row	=	mysqli_fetch_array($set))	{
       $setId =	$row['SetID'];	
-      echo $setId . "<br>";
+      $itemId =	$row['ItemID'];	
+      echo $setId . " ". $itemId .  "<br>";
    }
 ?>
 <div class="content" id="">
