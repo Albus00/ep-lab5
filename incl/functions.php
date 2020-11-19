@@ -39,8 +39,8 @@ function displaySetInventory($link, $setId) {
 
          echo "
             <tr>
-               <td>" . $quantity . "</td>
-               <td><img src='" . $imagePathPrefix . $imagePath . "' alt='" . $partName . "'></td>
+               <td style='min-width:110px;text-align:center;'>" . $quantity . "</td>
+               <td style='text-align:center;'><img src='" . $imagePathPrefix . $imagePath . "' alt='" . $partName . "'></td>
                <td>" . $colorName . "</td>
                <td>" . $partName . "</td>
             </tr>";
