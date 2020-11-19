@@ -21,7 +21,7 @@
 <?php 
    displaySet($link, $setId);
    echo "<br><br>";
-   //displaySetInventory($link, $setId);
+   displaySetInventory($link, $setId);
 ?>
 
 </div>
