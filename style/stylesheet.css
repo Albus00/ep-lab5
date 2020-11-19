@@ -26,6 +26,12 @@ tr:nth-child(even) {
   background-color: #2c2f3e;
 }
 
+th {
+  padding: 1% 2%;
+  font-size: 0.9em;
+  font-weight: normal;
+}
+
 td {
   padding: 1% 2%;
   font-size: 0.7em;
