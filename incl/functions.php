@@ -51,9 +51,8 @@ function displaySetInventory($link, $setId) {
 }
 
 function findPart($link, $partId) {
-   $parts	=	mysqli_query($link,	"SELECT	*	FROM	colors WHERE PartID LIKE '" . $partId . "'");
+   $parts	=	mysqli_query($link,	"SELECT	*	FROM	parts WHERE PartID LIKE '" . $partId . "'");
    while	($row	=	mysqli_fetch_array($parts))	{
-      echo  $row['ItemID'] . " " . $row['CatID'] . " " . $row['Partname'];
       return $row['Partname'];
    }
 }
@@ -66,7 +65,7 @@ function findColor($link, $colorId) {
 }
 
 function findImage($link, $itemTypeId, $colorId, $itemId) {
-   $images	=	mysqli_query($link,	"SELECT	*	FROM	colors WHERE ItemtypeID LIKE '" . $itemTypeId . "' AND itemID LIKE '" . $itemId . "' AND colorID LIKE '" . $colorId . "'");
+   $images	=	mysqli_query($link,	"SELECT	*	FROM	images WHERE ItemtypeID LIKE '" . $itemTypeId . "' AND itemID LIKE '" . $itemId . "' AND colorID LIKE '" . $colorId . "'");
    while	($row	=	mysqli_fetch_array($images))	{
       if ($row['has_gif']) {
          return $itemTypeId . "/" . $colorId . "/" . $itemId . ".gif";
