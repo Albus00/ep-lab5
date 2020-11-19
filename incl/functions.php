@@ -53,6 +53,7 @@ function displaySetInventory($link, $setId) {
 function findPart($link, $partId) {
    $parts	=	mysqli_query($link,	"SELECT	*	FROM	colors WHERE PartID LIKE '" . $partId . "'");
    while	($row	=	mysqli_fetch_array($parts))	{
+      echo  $row['ItemID'] . " " . $row['CatID'] . " " . $row['Partname'];
       return $row['Partname'];
    }
 }
