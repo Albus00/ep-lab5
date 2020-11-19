@@ -26,23 +26,23 @@ tr:nth-child(even) {
   background-color: #2c2f3e;
 }
 
-th {
-  padding: 1% 2%;
-  font-size: 0.9em;
-  font-weight: normal;
-}
-
-td {
+td, th {
   padding: 1% 2%;
   font-size: 0.7em;
+  font-weight: normal;
+  min-width: 130px;
 }
 
-td:nth-child(1) {
+td:nth-child(1), th:nth-child(1) {
   border-radius: 10px 0 0 10px;
 }
 
-td:nth-child(4) {
+td:nth-child(4), th:nth-child(4) {
   border-radius: 0 10px 10px 0;
+}
+
+th {
+  font-size: 0.9em;
 }
 
 h1, h2 {
