@@ -2,6 +2,8 @@
 
 function displaySet($link, $setID) {
    try {
+      echo "<table>";
+
       // WHERE setId LIKE '10199-1'
       $set	=	mysqli_query($link, "SELECT * FROM sets");
       while	($row	=	mysqli_fetch_array($set))	{
@@ -12,26 +14,25 @@ function displaySet($link, $setID) {
          //echo "<h2>" . $name . " - " . $setId . "</h2>";
 
          echo 
-            "<table>
-               <tr>
-                  <td>"
-                     . $setId .
-                  "</td>
-                  <td>"
-                     . $name .
-                  "</td>
-                  <td>"
-                     . $catId .
-                  "</td>
-                  <td>"
-                     . $year .
-                  "</td>
-               </tr>
-            </table>";
+            "<tr>
+               <td>"
+                  . $setId .
+               "</td>
+               <td>"
+                  . $name .
+               "</td>
+               <td>"
+                  . $catId .
+               "</td>
+               <td>"
+                  . $year .
+               "</td>
+            </tr>";
       }
    } catch (\Throwable $th) {
       echo $set . "<br>" . $th->getMessage();
    }
+   echo "</table>";
 }
 
 ?>
