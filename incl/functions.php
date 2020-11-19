@@ -55,6 +55,7 @@ function findPart($link, $partId) {
    while	($row	=	mysqli_fetch_array($parts))	{
       return $row['Partname'];
    }
+   return "Not Found";
 }
 
 function findColor($link, $colorId) {
@@ -62,6 +63,7 @@ function findColor($link, $colorId) {
    while	($row	=	mysqli_fetch_array($colors))	{
       return $row['Colorname'];
    }
+   return "Not Found";
 }
 
 function findImage($link, $itemTypeId, $colorId, $itemId) {
@@ -73,7 +75,7 @@ function findImage($link, $itemTypeId, $colorId, $itemId) {
       else {
          return $itemTypeId . "/" . $colorId . "/" . $itemId . ".jpg";
       }
-      return "not found";
+      return "Not Found";
       
    }
 }
