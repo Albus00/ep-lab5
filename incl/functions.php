@@ -6,7 +6,7 @@ function displaySet($link, $setId) {
       $name = $row['Setname'];
       $year = $row['Year'];
 
-      echo "<h2>" . $name . " - " . $setId . "</h2>";
+      echo "<h1>" . $name . " - " . $setId . "</h1>";
       echo "<h3>" . $year . "</h3>";
    }
 }
