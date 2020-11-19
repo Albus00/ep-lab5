@@ -15,12 +15,12 @@ function displaySetInventory($link, $setId) {
    try {
       echo "<table>";
       echo "
-         <th>
-            <td>Quantity</td>
-            <td>Picture</td>
-            <td>Color</td>
-            <td>Name</td>
-         </th>";
+         <tr>
+            <th>Quantity</th>
+            <th>Picture</th>
+            <th>Color</th>
+            <th>Name</th>
+         </tr>";
 
       $inventory	=	mysqli_query($link,	"SELECT	*	FROM	inventory WHERE setId LIKE '" . $setId . "'");
       while	($row	=	mysqli_fetch_array($inventory))	{
